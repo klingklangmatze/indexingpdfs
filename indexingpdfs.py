@@ -211,8 +211,7 @@ theta = np.radians(vz * (90 - ca_d))
 
 
 #Here you can finally rotate the measuring points
-rot_angle = 0
-
+rot_angle = 58
 if rot_angle > 0:
     ax.text(0.85, 0.075, 'Rotation: \nClockwise '+ str(rot_angle) + '°', transform=ax.transAxes, color='grey', zorder=2, fontsize=7)
 elif rot_angle < 0:
@@ -224,14 +223,14 @@ else:
 
 
 #Enter the measured values at this point
-indexing(15, 12, 'w', 'PDF1', '+', 'g', 'g', '8', v_nu, theta, rot_angle)
-indexing(255, 8, 'e', 'PDF2', '+', 'b', 'b', '8', v_nu, theta, rot_angle)
-indexing(2, 6, 'w', 'PDF3', '+',  'r', 'r', '8', v_nu, theta, rot_angle)
-indexing(56, 10, 'w', 'PDF3', '+',  'r', 'r', '8', v_nu, theta, rot_angle)
-indexing(56, 10, 'w', 'PDF3', '+',  'r', 'r', '8', v_nu, theta, rot_angle)
+indexing(25, 12, 'w', 'PDF1', '+', 'g', 'g', '8', v_nu, theta, rot_angle)
+indexing(225, 9, 'e', 'PDF2', '+', 'b', 'b', '8', v_nu, theta, rot_angle)
+indexing(25, 8, 'w', 'PDF3', '+',  'r', 'r', '8', v_nu, theta, rot_angle)
 
 
-ax.legend(title='$\mathbf{RA-16}$\n   $\mathit{Grain}-1b2$', loc='best', frameon=True, fancybox=True, edgecolor='dimgrey',
+
+
+ax.legend(title='$\mathbf{IC-02}$\n   $\mathit{Grain}-23b$', loc='best', frameon=True, fancybox=True, edgecolor='dimgrey',
           labelspacing=0.25, borderpad=0.25)
 
 circle1 = plt.Circle((0, 0), 0.09, linewidth=1, facecolor='white', ls='solid', ec='dimgrey', zorder=2)
